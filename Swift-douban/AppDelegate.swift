@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = HomeTabBarViewController()
         window?.makeKeyAndVisible()
         
+        LibsManager().setupApperance()
         
         return true
     }

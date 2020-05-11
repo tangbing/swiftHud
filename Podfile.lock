@@ -1,17 +1,129 @@
 PODS:
-  - Alamofire (4.9.1)
+  - AcknowList (1.9.4)
+  - Alamofire (5.0.0-rc.2)
+  - Apollo (0.19.0):
+    - Apollo/Core (= 0.19.0)
+  - Apollo/Core (0.19.0)
+  - CocoaLumberjack/Core (3.6.1)
+  - CocoaLumberjack/Swift (3.6.1):
+    - CocoaLumberjack/Core
+  - DateToolsSwift (4.0.0)
+  - Differentiator (4.0.1)
+  - DropDown (2.3.13)
   - DZNEmptyDataSet (1.8.1)
+  - FloatingPanel (1.7.4)
+  - Hero (1.5.0)
+  - Highlightr (2.1.0)
   - HMSegmentedControl (1.5.5)
+  - ImageSlideshow/Core (1.8.3)
+  - ImageSlideshow/Kingfisher (1.8.3):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - InputBarAccessoryView (4.3.2):
+    - InputBarAccessoryView/Core (= 4.3.2)
+  - InputBarAccessoryView/Core (4.3.2)
+  - IQKeyboardManagerSwift (6.5.5)
+  - KafkaRefresh (1.4.8):
+    - KafkaRefresh/Category (= 1.4.8)
+    - KafkaRefresh/Configuration (= 1.4.8)
+    - KafkaRefresh/Core (= 1.4.8)
+    - KafkaRefresh/Default (= 1.4.8)
+    - KafkaRefresh/Style (= 1.4.8)
+    - KafkaRefresh/UIKit (= 1.4.8)
+  - KafkaRefresh/Category (1.4.8)
+  - KafkaRefresh/Configuration (1.4.8):
+    - KafkaRefresh/UIKit/FootKit
+    - KafkaRefresh/UIKit/HeadKit
+  - KafkaRefresh/Core (1.4.8):
+    - KafkaRefresh/Category
+  - KafkaRefresh/Default (1.4.8):
+    - KafkaRefresh/Style
+  - KafkaRefresh/Style (1.4.8)
+  - KafkaRefresh/UIKit (1.4.8):
+    - KafkaRefresh/UIKit/FootKit (= 1.4.8)
+    - KafkaRefresh/UIKit/HeadKit (= 1.4.8)
+    - KafkaRefresh/UIKit/LayerKit (= 1.4.8)
+  - KafkaRefresh/UIKit/FootKit (1.4.8):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/HeadKit (1.4.8):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Core
+    - KafkaRefresh/Default
+    - KafkaRefresh/Style
+    - KafkaRefresh/UIKit/LayerKit
+  - KafkaRefresh/UIKit/LayerKit (1.4.8):
+    - KafkaRefresh/Category
+    - KafkaRefresh/Default
   - KakaJSON (1.1.2)
+  - KeychainAccess (4.2.0)
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
+  - Localize-Swift (3.1.0)
+  - MessageKit (3.1.0):
+    - InputBarAccessoryView (~> 4.3.0)
   - MJRefresh (3.3.1)
+  - Moya (14.0.0-beta.2):
+    - Moya/Core (= 14.0.0-beta.2)
+  - Moya-ObjectMapper/Core (2.8):
+    - Moya (= 14.0.0-beta.2)
+    - ObjectMapper (~> 3.5)
+  - Moya-ObjectMapper/RxSwift (2.8):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift (~> 5)
+  - Moya/Core (14.0.0-beta.2):
+    - Alamofire (= 5.0.0-rc.2)
+  - Moya/RxSwift (14.0.0-beta.2):
+    - Moya/Core
+    - RxSwift (~> 5.0)
+  - MultiProgressView (1.3.0)
+  - "NSObject+Rx (5.1.0)":
+    - RxSwift (~> 5.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - ObjectMapper (3.5.2)
   - R.swift (5.2.1):
     - R.swift.Library (~> 5.2.0)
   - R.swift.Library (5.2.0)
   - RAMAnimatedTabBarController (5.0.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.1):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxOptional (4.1.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+  - RxTheme (4.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxViewController (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - SnapKit (5.0.1)
+  - SwiftDate (6.1.0)
   - SwifterSwift (5.1.0):
     - SwifterSwift/AppKit (= 5.1.0)
     - SwifterSwift/CoreGraphics (= 5.1.0)
@@ -33,54 +145,161 @@ PODS:
   - SwifterSwift/SpriteKit (5.1.0)
   - SwifterSwift/SwiftStdlib (5.1.0)
   - SwifterSwift/UIKit (5.1.0)
+  - SwiftLint (0.37.0)
   - SwiftyJSON (5.0.0)
   - Toast-Swift (5.0.1)
+  - WhatsNewKit (1.3.3)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.9.1)
+  - AcknowList (~> 1.8)
+  - Apollo (= 0.19.0)
+  - CocoaLumberjack/Swift (~> 3.0)
+  - DateToolsSwift (~> 4.0)
+  - DropDown (~> 2.0)
   - DZNEmptyDataSet (~> 1.0)
+  - FloatingPanel (~> 1.0)
+  - Hero (~> 1.5.0)
+  - Highlightr (~> 2.0)
   - HMSegmentedControl (~> 1.0)
+  - ImageSlideshow/Kingfisher (~> 1.8)
+  - IQKeyboardManagerSwift (~> 6.0)
+  - KafkaRefresh (~> 1.0)
   - KakaJSON
+  - KeychainAccess (~> 4.0)
   - Kingfisher
+  - Kingfisher (~> 5.0)
+  - Localize-Swift (~> 3.0)
+  - MessageKit (~> 3.0)
   - MJRefresh
+  - Moya-ObjectMapper/RxSwift (from `https://github.com/khoren93/Moya-ObjectMapper.git`, branch `moya14`)
+  - Moya/RxSwift (= 14.0.0-beta.2)
+  - MultiProgressView (~> 1.0)
+  - "NSObject+Rx (~> 5.0)"
+  - NVActivityIndicatorView (~> 4.0)
   - R.swift (~> 5.0)
-  - RAMAnimatedTabBarController (= 5.0.1)
-  - SnapKit
+  - RAMAnimatedTabBarController (~> 5.0)
+  - RxDataSources (~> 4.0)
+  - RxGesture (~> 3.0)
+  - RxOptional (~> 4.0)
+  - RxSwiftExt (~> 5.0)
+  - RxTheme (~> 4.0)
+  - RxViewController (~> 1.0)
+  - SnapKit (~> 5.0)
+  - SwiftDate (~> 6.0)
   - SwifterSwift (~> 5.0)
+  - SwiftLint (= 0.37.0)
   - SwiftyJSON (~> 5.0.0)
   - Toast-Swift (~> 5.0)
+  - WhatsNewKit (~> 1.0)
 
 SPEC REPOS:
   trunk:
+    - AcknowList
     - Alamofire
+    - Apollo
+    - CocoaLumberjack
+    - DateToolsSwift
+    - Differentiator
+    - DropDown
     - DZNEmptyDataSet
+    - FloatingPanel
+    - Hero
+    - Highlightr
     - HMSegmentedControl
+    - ImageSlideshow
+    - InputBarAccessoryView
+    - IQKeyboardManagerSwift
+    - KafkaRefresh
     - KakaJSON
+    - KeychainAccess
     - Kingfisher
+    - Localize-Swift
+    - MessageKit
     - MJRefresh
+    - Moya
+    - MultiProgressView
+    - "NSObject+Rx"
+    - NVActivityIndicatorView
+    - ObjectMapper
     - R.swift
     - R.swift.Library
     - RAMAnimatedTabBarController
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - RxTheme
+    - RxViewController
     - SnapKit
+    - SwiftDate
     - SwifterSwift
+    - SwiftLint
     - SwiftyJSON
     - Toast-Swift
+    - WhatsNewKit
+
+EXTERNAL SOURCES:
+  Moya-ObjectMapper:
+    :branch: moya14
+    :git: https://github.com/khoren93/Moya-ObjectMapper.git
+
+CHECKOUT OPTIONS:
+  Moya-ObjectMapper:
+    :commit: fe6428d365bde14b8aaae425056f4244b0069100
+    :git: https://github.com/khoren93/Moya-ObjectMapper.git
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AcknowList: a236060b8c33141d7756814fd21d5dab477fc193
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  Apollo: 4f0fea775a98bba34935764e49d27f2d3b1a5f21
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FloatingPanel: 3c9d0e30fe350e1613157557769d2ec97f76b96b
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
+  Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
   HMSegmentedControl: f514c6dad47aa3065e0ed2e8046b73efc71221b9
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+  InputBarAccessoryView: 7985d418040a05fe894bd4b8328dd43ab35517c3
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  KafkaRefresh: aaae4ff23197f2ef38b6b22ca320740beac4bbb4
   KakaJSON: cc5ff50a8c1cfbb09413db8496cb709a209e6137
+  KeychainAccess: 3f760109aa99b05d0f231e28b22642da7153e38a
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  Moya: 788e592b92fadb10e30d350ed1a9f75c91eb1368
+  Moya-ObjectMapper: f5a442e9c6a87fac57a9b1b954f1cf91a50a15f7
+  MultiProgressView: 65e5bb8181687099ade56d16d85d245a92fafa96
+  "NSObject+Rx": fa6bbcc1ab1faa06b01466bc09b1e0692bbc5946
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
   R.swift: 2347df9a8294c2bbd99d94c6f068392d01e93406
   R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   RAMAnimatedTabBarController: ec36fba2fa4679fd36db55098e3477fe9bd79f52
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: a3f8dd6adf078110ed5e1c9c30d09d705a09852e
+  RxOptional: b1fcd60856807a564c0215c2184b8d33e7826dc2
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  RxTheme: 0b642f47c7d197a803c6b9c083964188c34f7ddb
+  RxViewController: 7330a46e5c31cd680db169da4c9fc8676e975a81
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
   SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
+  SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  WhatsNewKit: 3cbe30a202cc387086a977deba52af50f61c656f
 
-PODFILE CHECKSUM: 4f7861dad9d347ed1b81c0dd8dd20cc5cd42ae8f
+PODFILE CHECKSUM: 4b4a7f020bc318afb556b07ea6e12ea0f3dcf7d0
 
 COCOAPODS: 1.9.1

@@ -13,16 +13,71 @@
 		330CC291245FD64500E44C5A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330CC290245FD64400E44C5A /* Movie.swift */; };
 		330CC296245FFAB600E44C5A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330CC294245FFAB600E44C5A /* TableViewCell.swift */; };
 		330CC297245FFAB600E44C5A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330CC295245FFAB600E44C5A /* TableViewCell.xib */; };
+		3349D20224655916000B6EA3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349D20124655916000B6EA3 /* Label.swift */; };
+		3349D20424655DA8000B6EA3 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349D20324655DA8000B6EA3 /* TableView.swift */; };
 		337BB087245AC427001F4EFF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337BB086245AC426001F4EFF /* Icons.xcassets */; };
 		337BB08D245AD083001F4EFF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337BB08C245AD083001F4EFF /* Info.plist */; };
 		337BB08F245AD1E9001F4EFF /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337BB08E245AD1E9001F4EFF /* R.generated.swift */; };
+		337E0E38246697A400A4ABDF /* TrendingGithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E37246697A400A4ABDF /* TrendingGithubAPI.swift */; };
+		337E0E63246697BF00A4ABDF /* RepositorySearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E3A246697BF00A4ABDF /* RepositorySearch.json */; };
+		337E0E64246697BF00A4ABDF /* RepositoryTrendings.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E3B246697BF00A4ABDF /* RepositoryTrendings.json */; };
+		337E0E65246697BF00A4ABDF /* RepositoryPullRequests.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E3C246697BF00A4ABDF /* RepositoryPullRequests.json */; };
+		337E0E66246697BF00A4ABDF /* EventsRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E3D246697BF00A4ABDF /* EventsRepository.json */; };
+		337E0E67246697BF00A4ABDF /* Languages.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E3E246697BF00A4ABDF /* Languages.json */; };
+		337E0E68246697BF00A4ABDF /* UserRepositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E3F246697BF00A4ABDF /* UserRepositories.json */; };
+		337E0E69246697BF00A4ABDF /* RepositoryRelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E40246697BF00A4ABDF /* RepositoryRelease.json */; };
+		337E0E6A246697BF00A4ABDF /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E41246697BF00A4ABDF /* Events.json */; };
+		337E0E6B246697BF00A4ABDF /* RepositoryIssue.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E42246697BF00A4ABDF /* RepositoryIssue.json */; };
+		337E0E6C246697BF00A4ABDF /* RepositoryBranch.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E43246697BF00A4ABDF /* RepositoryBranch.json */; };
+		337E0E6D246697BF00A4ABDF /* RepositoryPullRequestComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E44246697BF00A4ABDF /* RepositoryPullRequestComments.json */; };
+		337E0E6E246697BF00A4ABDF /* RepositoryContributors.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E45246697BF00A4ABDF /* RepositoryContributors.json */; };
+		337E0E6F246697BF00A4ABDF /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E46246697BF00A4ABDF /* Repository.json */; };
+		337E0E70246697BF00A4ABDF /* RepositoryStargazers.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E47246697BF00A4ABDF /* RepositoryStargazers.json */; };
+		337E0E71246697BF00A4ABDF /* UserTrendings.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E48246697BF00A4ABDF /* UserTrendings.json */; };
+		337E0E72246697BF00A4ABDF /* UserRepositoriesStarred.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E49246697BF00A4ABDF /* UserRepositoriesStarred.json */; };
+		337E0E73246697BF00A4ABDF /* EmptyArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E4A246697BF00A4ABDF /* EmptyArray.json */; };
+		337E0E74246697BF00A4ABDF /* EventsUserReceived.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E4B246697BF00A4ABDF /* EventsUserReceived.json */; };
+		337E0E75246697BF00A4ABDF /* UserRepositoriesWatching.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E4C246697BF00A4ABDF /* UserRepositoriesWatching.json */; };
+		337E0E76246697BF00A4ABDF /* UserSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E4D246697BF00A4ABDF /* UserSearch.json */; };
+		337E0E77246697BF00A4ABDF /* UserFollowers.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E4E246697BF00A4ABDF /* UserFollowers.json */; };
+		337E0E78246697BF00A4ABDF /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E4F246697BF00A4ABDF /* User.json */; };
+		337E0E79246697BF00A4ABDF /* EventsUserPerformed.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E50246697BF00A4ABDF /* EventsUserPerformed.json */; };
+		337E0E7A246697BF00A4ABDF /* RepositoryIssues.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E51246697BF00A4ABDF /* RepositoryIssues.json */; };
+		337E0E7B246697BF00A4ABDF /* Notifications.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E52246697BF00A4ABDF /* Notifications.json */; };
+		337E0E7C246697BF00A4ABDF /* RepositoryIssueComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E53246697BF00A4ABDF /* RepositoryIssueComments.json */; };
+		337E0E7D246697BF00A4ABDF /* Organization.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E54246697BF00A4ABDF /* Organization.json */; };
+		337E0E7E246697BF00A4ABDF /* RepositoryReadme.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E55246697BF00A4ABDF /* RepositoryReadme.json */; };
+		337E0E7F246697BF00A4ABDF /* EmptyObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E56246697BF00A4ABDF /* EmptyObject.json */; };
+		337E0E80246697BF00A4ABDF /* RepositoryCommit.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E57246697BF00A4ABDF /* RepositoryCommit.json */; };
+		337E0E81246697BF00A4ABDF /* UserFollowing.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E58246697BF00A4ABDF /* UserFollowing.json */; };
+		337E0E82246697BF00A4ABDF /* RepositoryCommits.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E59246697BF00A4ABDF /* RepositoryCommits.json */; };
+		337E0E83246697BF00A4ABDF /* NotificationsRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E5A246697BF00A4ABDF /* NotificationsRepository.json */; };
+		337E0E84246697BF00A4ABDF /* RepositoryContents.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E5B246697BF00A4ABDF /* RepositoryContents.json */; };
+		337E0E85246697BF00A4ABDF /* RepositoryForks.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E5C246697BF00A4ABDF /* RepositoryForks.json */; };
+		337E0E86246697BF00A4ABDF /* RepositoryBranches.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E5D246697BF00A4ABDF /* RepositoryBranches.json */; };
+		337E0E87246697BF00A4ABDF /* Profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E5E246697BF00A4ABDF /* Profile.json */; };
+		337E0E88246697BF00A4ABDF /* RepositoryReleases.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E5F246697BF00A4ABDF /* RepositoryReleases.json */; };
+		337E0E89246697BF00A4ABDF /* RepositoryPullRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E60246697BF00A4ABDF /* RepositoryPullRequest.json */; };
+		337E0E8A246697BF00A4ABDF /* RepositoryWatchers.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E61246697BF00A4ABDF /* RepositoryWatchers.json */; };
+		337E0E8B246697BF00A4ABDF /* EventsOrganization.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E62246697BF00A4ABDF /* EventsOrganization.json */; };
+		337E0E8D246698A600A4ABDF /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E8C246698A600A4ABDF /* GitHubAPI.swift */; };
 		3383B65223850A51001ED2A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B65123850A51001ED2A9 /* AppDelegate.swift */; };
-		3383B65623850A51001ED2A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B65523850A51001ED2A9 /* ViewController.swift */; };
+		3383B65623850A51001ED2A9 /* DbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B65523850A51001ED2A9 /* DbViewController.swift */; };
 		3383B65B23850A54001ED2A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3383B65A23850A54001ED2A9 /* Assets.xcassets */; };
 		3383B65E23850A54001ED2A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3383B65C23850A54001ED2A9 /* LaunchScreen.storyboard */; };
 		3383B66923850A54001ED2A9 /* Swift_____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B66823850A54001ED2A9 /* Swift_____Tests.swift */; };
 		3383B67423850A54001ED2A9 /* Swift_____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B67323850A54001ED2A9 /* Swift_____UITests.swift */; };
 		3383B684238515EC001ED2A9 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B683238515EC001ED2A9 /* MovieCollectionViewCell.swift */; };
+		33B6C98924624FD50010363D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C98824624FD50010363D /* EventsViewController.swift */; };
+		33B6C98C24624FF40010363D /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C98B24624FF40010363D /* NotificationsViewController.swift */; };
+		33B6C98F24625A390010363D /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C98E24625A390010363D /* SegmentedControl.swift */; };
+		33B6C99224625CB30010363D /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C99124625CB30010363D /* Configs.swift */; };
+		33B6C99424625E3B0010363D /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C99324625E3B0010363D /* View.swift */; };
+		33B6C9962462B4310010363D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C9952462B4310010363D /* ViewController.swift */; };
+		33B6C9982462B6F60010363D /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C9972462B6F60010363D /* StackView.swift */; };
+		33B6C99A2462B7D50010363D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C9992462B7D50010363D /* SearchBar.swift */; };
+		33B6C99C2462D8190010363D /* BarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C99B2462D8190010363D /* BarButtonItem.swift */; };
+		33B6C99F2462DCDD0010363D /* LibsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B6C99E2462DCDD0010363D /* LibsManager.swift */; };
 		33D73C2C2461B0FC00FF607C /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D73C2B2461B0FC00FF607C /* HomeTabBarViewController.swift */; };
 		9B750056D0EFB7575702B891 /* Pods_Swift_douban.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE892B144E1EC4B2E0C20CCE /* Pods_Swift_douban.framework */; };
 /* End PBXBuildFile section */
@@ -51,12 +106,57 @@
 		330CC290245FD64400E44C5A /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		330CC294245FFAB600E44C5A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		330CC295245FFAB600E44C5A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3349D20124655916000B6EA3 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		3349D20324655DA8000B6EA3 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		337BB086245AC426001F4EFF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		337BB08C245AD083001F4EFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337BB08E245AD1E9001F4EFF /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		337E0E37246697A400A4ABDF /* TrendingGithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingGithubAPI.swift; sourceTree = "<group>"; };
+		337E0E3A246697BF00A4ABDF /* RepositorySearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositorySearch.json; sourceTree = "<group>"; };
+		337E0E3B246697BF00A4ABDF /* RepositoryTrendings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryTrendings.json; sourceTree = "<group>"; };
+		337E0E3C246697BF00A4ABDF /* RepositoryPullRequests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryPullRequests.json; sourceTree = "<group>"; };
+		337E0E3D246697BF00A4ABDF /* EventsRepository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventsRepository.json; sourceTree = "<group>"; };
+		337E0E3E246697BF00A4ABDF /* Languages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Languages.json; sourceTree = "<group>"; };
+		337E0E3F246697BF00A4ABDF /* UserRepositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRepositories.json; sourceTree = "<group>"; };
+		337E0E40246697BF00A4ABDF /* RepositoryRelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryRelease.json; sourceTree = "<group>"; };
+		337E0E41246697BF00A4ABDF /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Events.json; sourceTree = "<group>"; };
+		337E0E42246697BF00A4ABDF /* RepositoryIssue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryIssue.json; sourceTree = "<group>"; };
+		337E0E43246697BF00A4ABDF /* RepositoryBranch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryBranch.json; sourceTree = "<group>"; };
+		337E0E44246697BF00A4ABDF /* RepositoryPullRequestComments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryPullRequestComments.json; sourceTree = "<group>"; };
+		337E0E45246697BF00A4ABDF /* RepositoryContributors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryContributors.json; sourceTree = "<group>"; };
+		337E0E46246697BF00A4ABDF /* Repository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Repository.json; sourceTree = "<group>"; };
+		337E0E47246697BF00A4ABDF /* RepositoryStargazers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryStargazers.json; sourceTree = "<group>"; };
+		337E0E48246697BF00A4ABDF /* UserTrendings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserTrendings.json; sourceTree = "<group>"; };
+		337E0E49246697BF00A4ABDF /* UserRepositoriesStarred.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRepositoriesStarred.json; sourceTree = "<group>"; };
+		337E0E4A246697BF00A4ABDF /* EmptyArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmptyArray.json; sourceTree = "<group>"; };
+		337E0E4B246697BF00A4ABDF /* EventsUserReceived.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventsUserReceived.json; sourceTree = "<group>"; };
+		337E0E4C246697BF00A4ABDF /* UserRepositoriesWatching.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRepositoriesWatching.json; sourceTree = "<group>"; };
+		337E0E4D246697BF00A4ABDF /* UserSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserSearch.json; sourceTree = "<group>"; };
+		337E0E4E246697BF00A4ABDF /* UserFollowers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserFollowers.json; sourceTree = "<group>"; };
+		337E0E4F246697BF00A4ABDF /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		337E0E50246697BF00A4ABDF /* EventsUserPerformed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventsUserPerformed.json; sourceTree = "<group>"; };
+		337E0E51246697BF00A4ABDF /* RepositoryIssues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryIssues.json; sourceTree = "<group>"; };
+		337E0E52246697BF00A4ABDF /* Notifications.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Notifications.json; sourceTree = "<group>"; };
+		337E0E53246697BF00A4ABDF /* RepositoryIssueComments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryIssueComments.json; sourceTree = "<group>"; };
+		337E0E54246697BF00A4ABDF /* Organization.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Organization.json; sourceTree = "<group>"; };
+		337E0E55246697BF00A4ABDF /* RepositoryReadme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryReadme.json; sourceTree = "<group>"; };
+		337E0E56246697BF00A4ABDF /* EmptyObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmptyObject.json; sourceTree = "<group>"; };
+		337E0E57246697BF00A4ABDF /* RepositoryCommit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryCommit.json; sourceTree = "<group>"; };
+		337E0E58246697BF00A4ABDF /* UserFollowing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserFollowing.json; sourceTree = "<group>"; };
+		337E0E59246697BF00A4ABDF /* RepositoryCommits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryCommits.json; sourceTree = "<group>"; };
+		337E0E5A246697BF00A4ABDF /* NotificationsRepository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NotificationsRepository.json; sourceTree = "<group>"; };
+		337E0E5B246697BF00A4ABDF /* RepositoryContents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryContents.json; sourceTree = "<group>"; };
+		337E0E5C246697BF00A4ABDF /* RepositoryForks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryForks.json; sourceTree = "<group>"; };
+		337E0E5D246697BF00A4ABDF /* RepositoryBranches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryBranches.json; sourceTree = "<group>"; };
+		337E0E5E246697BF00A4ABDF /* Profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Profile.json; sourceTree = "<group>"; };
+		337E0E5F246697BF00A4ABDF /* RepositoryReleases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryReleases.json; sourceTree = "<group>"; };
+		337E0E60246697BF00A4ABDF /* RepositoryPullRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryPullRequest.json; sourceTree = "<group>"; };
+		337E0E61246697BF00A4ABDF /* RepositoryWatchers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = RepositoryWatchers.json; sourceTree = "<group>"; };
+		337E0E62246697BF00A4ABDF /* EventsOrganization.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventsOrganization.json; sourceTree = "<group>"; };
+		337E0E8C246698A600A4ABDF /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		3383B64E23850A51001ED2A9 /* Swift-douban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-douban.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3383B65123850A51001ED2A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3383B65523850A51001ED2A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3383B65523850A51001ED2A9 /* DbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbViewController.swift; sourceTree = "<group>"; };
 		3383B65A23850A54001ED2A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3383B65D23850A54001ED2A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3383B66423850A54001ED2A9 /* Swift-doubanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-doubanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +166,16 @@
 		3383B67323850A54001ED2A9 /* Swift_____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift_____UITests.swift"; sourceTree = "<group>"; };
 		3383B67523850A54001ED2A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3383B683238515EC001ED2A9 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		33B6C98824624FD50010363D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		33B6C98B24624FF40010363D /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		33B6C98E24625A390010363D /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		33B6C99124625CB30010363D /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
+		33B6C99324625E3B0010363D /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		33B6C9952462B4310010363D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33B6C9972462B6F60010363D /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		33B6C9992462B7D50010363D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		33B6C99B2462D8190010363D /* BarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItem.swift; sourceTree = "<group>"; };
+		33B6C99E2462DCDD0010363D /* LibsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibsManager.swift; sourceTree = "<group>"; };
 		33D73C2B2461B0FC00FF607C /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		56C3A100F0E27ECFCEC2448F /* Pods-Swift-豆瓣首页.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-豆瓣首页.release.xcconfig"; path = "Target Support Files/Pods-Swift-豆瓣首页/Pods-Swift-豆瓣首页.release.xcconfig"; sourceTree = "<group>"; };
 		8EBC8100B6ED7DAFE7E5EE28 /* Pods-Swift-豆瓣首页.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-豆瓣首页.debug.xcconfig"; path = "Target Support Files/Pods-Swift-豆瓣首页/Pods-Swift-豆瓣首页.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +213,8 @@
 		33028D352461B6920005061B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				33B6C98A24624FE30010363D /* Notifications */,
+				33B6C98724624FBF0010363D /* Events */,
 				33028D3C2461B7430005061B /* Settings */,
 				33028D392461B6F80005061B /* Login */,
 				33028D362461B69A0005061B /* Search */,
@@ -160,6 +272,64 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		337E0E362466977D00A4ABDF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				337E0E8C246698A600A4ABDF /* GitHubAPI.swift */,
+				337E0E39246697BF00A4ABDF /* Stubbed Responses */,
+				337E0E37246697A400A4ABDF /* TrendingGithubAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		337E0E39246697BF00A4ABDF /* Stubbed Responses */ = {
+			isa = PBXGroup;
+			children = (
+				337E0E3A246697BF00A4ABDF /* RepositorySearch.json */,
+				337E0E3B246697BF00A4ABDF /* RepositoryTrendings.json */,
+				337E0E3C246697BF00A4ABDF /* RepositoryPullRequests.json */,
+				337E0E3D246697BF00A4ABDF /* EventsRepository.json */,
+				337E0E3E246697BF00A4ABDF /* Languages.json */,
+				337E0E3F246697BF00A4ABDF /* UserRepositories.json */,
+				337E0E40246697BF00A4ABDF /* RepositoryRelease.json */,
+				337E0E41246697BF00A4ABDF /* Events.json */,
+				337E0E42246697BF00A4ABDF /* RepositoryIssue.json */,
+				337E0E43246697BF00A4ABDF /* RepositoryBranch.json */,
+				337E0E44246697BF00A4ABDF /* RepositoryPullRequestComments.json */,
+				337E0E45246697BF00A4ABDF /* RepositoryContributors.json */,
+				337E0E46246697BF00A4ABDF /* Repository.json */,
+				337E0E47246697BF00A4ABDF /* RepositoryStargazers.json */,
+				337E0E48246697BF00A4ABDF /* UserTrendings.json */,
+				337E0E49246697BF00A4ABDF /* UserRepositoriesStarred.json */,
+				337E0E4A246697BF00A4ABDF /* EmptyArray.json */,
+				337E0E4B246697BF00A4ABDF /* EventsUserReceived.json */,
+				337E0E4C246697BF00A4ABDF /* UserRepositoriesWatching.json */,
+				337E0E4D246697BF00A4ABDF /* UserSearch.json */,
+				337E0E4E246697BF00A4ABDF /* UserFollowers.json */,
+				337E0E4F246697BF00A4ABDF /* User.json */,
+				337E0E50246697BF00A4ABDF /* EventsUserPerformed.json */,
+				337E0E51246697BF00A4ABDF /* RepositoryIssues.json */,
+				337E0E52246697BF00A4ABDF /* Notifications.json */,
+				337E0E53246697BF00A4ABDF /* RepositoryIssueComments.json */,
+				337E0E54246697BF00A4ABDF /* Organization.json */,
+				337E0E55246697BF00A4ABDF /* RepositoryReadme.json */,
+				337E0E56246697BF00A4ABDF /* EmptyObject.json */,
+				337E0E57246697BF00A4ABDF /* RepositoryCommit.json */,
+				337E0E58246697BF00A4ABDF /* UserFollowing.json */,
+				337E0E59246697BF00A4ABDF /* RepositoryCommits.json */,
+				337E0E5A246697BF00A4ABDF /* NotificationsRepository.json */,
+				337E0E5B246697BF00A4ABDF /* RepositoryContents.json */,
+				337E0E5C246697BF00A4ABDF /* RepositoryForks.json */,
+				337E0E5D246697BF00A4ABDF /* RepositoryBranches.json */,
+				337E0E5E246697BF00A4ABDF /* Profile.json */,
+				337E0E5F246697BF00A4ABDF /* RepositoryReleases.json */,
+				337E0E60246697BF00A4ABDF /* RepositoryPullRequest.json */,
+				337E0E61246697BF00A4ABDF /* RepositoryWatchers.json */,
+				337E0E62246697BF00A4ABDF /* EventsOrganization.json */,
+			);
+			path = "Stubbed Responses";
+			sourceTree = "<group>";
+		};
 		3383B64523850A51001ED2A9 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +355,10 @@
 		3383B65023850A51001ED2A9 /* Swift-douban */ = {
 			isa = PBXGroup;
 			children = (
+				337E0E362466977D00A4ABDF /* Network */,
+				33B6C99D2462DCB30010363D /* managers */,
+				33B6C99024625C390010363D /* Configs */,
+				33B6C98D24625A160010363D /* common */,
 				33028D352461B6920005061B /* Models */,
 				33D73C292461B0A800FF607C /* Main */,
 				33D73C272461AF7100FF607C /* douban */,
@@ -214,10 +388,57 @@
 			path = "Swift-豆瓣首页UITests";
 			sourceTree = "<group>";
 		};
+		33B6C98724624FBF0010363D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				33B6C98824624FD50010363D /* EventsViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		33B6C98A24624FE30010363D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				33B6C98B24624FF40010363D /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		33B6C98D24625A160010363D /* common */ = {
+			isa = PBXGroup;
+			children = (
+				33B6C99B2462D8190010363D /* BarButtonItem.swift */,
+				33B6C98E24625A390010363D /* SegmentedControl.swift */,
+				33B6C9952462B4310010363D /* ViewController.swift */,
+				33B6C9972462B6F60010363D /* StackView.swift */,
+				33B6C9992462B7D50010363D /* SearchBar.swift */,
+				3349D20124655916000B6EA3 /* Label.swift */,
+				3349D20324655DA8000B6EA3 /* TableView.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		33B6C99024625C390010363D /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				33B6C99124625CB30010363D /* Configs.swift */,
+				33B6C99324625E3B0010363D /* View.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		33B6C99D2462DCB30010363D /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				33B6C99E2462DCDD0010363D /* LibsManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
 		33D73C272461AF7100FF607C /* douban */ = {
 			isa = PBXGroup;
 			children = (
-				3383B65523850A51001ED2A9 /* ViewController.swift */,
+				3383B65523850A51001ED2A9 /* DbViewController.swift */,
 				33D73C282461AF8600FF607C /* cell */,
 				330CC28F245FD64400E44C5A /* Model */,
 			);
@@ -368,10 +589,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				337E0E6E246697BF00A4ABDF /* RepositoryContributors.json in Resources */,
+				337E0E75246697BF00A4ABDF /* UserRepositoriesWatching.json in Resources */,
+				337E0E84246697BF00A4ABDF /* RepositoryContents.json in Resources */,
+				337E0E81246697BF00A4ABDF /* UserFollowing.json in Resources */,
+				337E0E6F246697BF00A4ABDF /* Repository.json in Resources */,
+				337E0E6C246697BF00A4ABDF /* RepositoryBranch.json in Resources */,
+				337E0E64246697BF00A4ABDF /* RepositoryTrendings.json in Resources */,
+				337E0E80246697BF00A4ABDF /* RepositoryCommit.json in Resources */,
+				337E0E67246697BF00A4ABDF /* Languages.json in Resources */,
+				337E0E85246697BF00A4ABDF /* RepositoryForks.json in Resources */,
+				337E0E77246697BF00A4ABDF /* UserFollowers.json in Resources */,
+				337E0E87246697BF00A4ABDF /* Profile.json in Resources */,
 				3383B65E23850A54001ED2A9 /* LaunchScreen.storyboard in Resources */,
+				337E0E86246697BF00A4ABDF /* RepositoryBranches.json in Resources */,
+				337E0E7F246697BF00A4ABDF /* EmptyObject.json in Resources */,
+				337E0E7E246697BF00A4ABDF /* RepositoryReadme.json in Resources */,
 				330CC297245FFAB600E44C5A /* TableViewCell.xib in Resources */,
 				3383B65B23850A54001ED2A9 /* Assets.xcassets in Resources */,
+				337E0E65246697BF00A4ABDF /* RepositoryPullRequests.json in Resources */,
+				337E0E6A246697BF00A4ABDF /* Events.json in Resources */,
+				337E0E89246697BF00A4ABDF /* RepositoryPullRequest.json in Resources */,
+				337E0E70246697BF00A4ABDF /* RepositoryStargazers.json in Resources */,
+				337E0E78246697BF00A4ABDF /* User.json in Resources */,
+				337E0E83246697BF00A4ABDF /* NotificationsRepository.json in Resources */,
+				337E0E7D246697BF00A4ABDF /* Organization.json in Resources */,
+				337E0E73246697BF00A4ABDF /* EmptyArray.json in Resources */,
+				337E0E63246697BF00A4ABDF /* RepositorySearch.json in Resources */,
+				337E0E69246697BF00A4ABDF /* RepositoryRelease.json in Resources */,
+				337E0E7C246697BF00A4ABDF /* RepositoryIssueComments.json in Resources */,
+				337E0E88246697BF00A4ABDF /* RepositoryReleases.json in Resources */,
 				337BB087245AC427001F4EFF /* Icons.xcassets in Resources */,
+				337E0E66246697BF00A4ABDF /* EventsRepository.json in Resources */,
+				337E0E71246697BF00A4ABDF /* UserTrendings.json in Resources */,
+				337E0E7B246697BF00A4ABDF /* Notifications.json in Resources */,
+				337E0E8A246697BF00A4ABDF /* RepositoryWatchers.json in Resources */,
+				337E0E6B246697BF00A4ABDF /* RepositoryIssue.json in Resources */,
+				337E0E76246697BF00A4ABDF /* UserSearch.json in Resources */,
+				337E0E74246697BF00A4ABDF /* EventsUserReceived.json in Resources */,
+				337E0E68246697BF00A4ABDF /* UserRepositories.json in Resources */,
+				337E0E8B246697BF00A4ABDF /* EventsOrganization.json in Resources */,
+				337E0E7A246697BF00A4ABDF /* RepositoryIssues.json in Resources */,
+				337E0E82246697BF00A4ABDF /* RepositoryCommits.json in Resources */,
+				337E0E79246697BF00A4ABDF /* EventsUserPerformed.json in Resources */,
+				337E0E72246697BF00A4ABDF /* UserRepositoriesStarred.json in Resources */,
+				337E0E6D246697BF00A4ABDF /* RepositoryPullRequestComments.json in Resources */,
 				337BB08D245AD083001F4EFF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,16 +721,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33B6C98924624FD50010363D /* EventsViewController.swift in Sources */,
 				33028D3B2461B7220005061B /* LoginViewController.swift in Sources */,
 				330CC291245FD64500E44C5A /* Movie.swift in Sources */,
-				3383B65623850A51001ED2A9 /* ViewController.swift in Sources */,
+				33B6C98C24624FF40010363D /* NotificationsViewController.swift in Sources */,
+				3383B65623850A51001ED2A9 /* DbViewController.swift in Sources */,
+				3349D20224655916000B6EA3 /* Label.swift in Sources */,
+				33B6C99F2462DCDD0010363D /* LibsManager.swift in Sources */,
+				337E0E8D246698A600A4ABDF /* GitHubAPI.swift in Sources */,
+				33B6C99A2462B7D50010363D /* SearchBar.swift in Sources */,
 				33028D3E2461B7770005061B /* SettingsViewController.swift in Sources */,
+				3349D20424655DA8000B6EA3 /* TableView.swift in Sources */,
 				3383B684238515EC001ED2A9 /* MovieCollectionViewCell.swift in Sources */,
+				33B6C99424625E3B0010363D /* View.swift in Sources */,
+				33B6C99C2462D8190010363D /* BarButtonItem.swift in Sources */,
 				3383B65223850A51001ED2A9 /* AppDelegate.swift in Sources */,
 				33D73C2C2461B0FC00FF607C /* HomeTabBarViewController.swift in Sources */,
+				33B6C98F24625A390010363D /* SegmentedControl.swift in Sources */,
 				330CC296245FFAB600E44C5A /* TableViewCell.swift in Sources */,
 				337BB08F245AD1E9001F4EFF /* R.generated.swift in Sources */,
+				33B6C9982462B6F60010363D /* StackView.swift in Sources */,
 				33028D382461B6ED0005061B /* SearchTableViewController.swift in Sources */,
+				33B6C9962462B4310010363D /* ViewController.swift in Sources */,
+				337E0E38246697A400A4ABDF /* TrendingGithubAPI.swift in Sources */,
+				33B6C99224625CB30010363D /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
