@@ -11,15 +11,13 @@ import Rswift
 import HMSegmentedControl
 import DropDown
 import Moya
+import KakaJSON
+import SwiftyJSON
+
 
 typealias DropDownView = DropDown
 
-//enum NetWorkError: MoyaError {
-//    typealias RawValue = <#type#>
-//
-//
-//    case anError
-//}
+
 
 enum SearchTypeSegments: Int {
     case repositories, users
@@ -101,18 +99,14 @@ enum SortRepositoryItems: Int {
     }
 }
 
-
-class SearchTableViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class SearchTableViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,SegmentedControlDidselectDelegate {
 
     lazy var tableView: TableView = {
            let view = TableView(frame: CGRect(), style: .plain)
            view.dataSource = self
            view.delegate = self
-           view.register(type(of: UITableViewCell()), forCellReuseIdentifier: "reuseIdentifier")
-//           view.emptyDataSetSource = self
-//           view.emptyDataSetDelegate = self
-           //view.rx.setDelegate(self).disposed(by: rx.disposeBag)
-           return view
+           //view.register(type(of: TrendingRepositoryCell()), forCellReuseIdentifier: "reuseIdentifier")
+        return view
        }()
     
     lazy var rightButton: UIBarButtonItem = {
@@ -131,12 +125,22 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
         ]
         let view = SegmentedControl(sectionImages: images, sectionSelectedImages: selectedImages)
         view?.selectedSegmentIndex = 0
+        view?.didSelectItem = self
         view?.snp.makeConstraints({ (make) in
             make.width.equalTo(200)
         })
-        view?.didSelectItem = { idx in
-            print(idx)
+        
+        view?.selectItemBlock = {index in
+            print("selectaaaaa\(index):")
         }
+//        view?.indexChangeBlock = { [weak self] index in
+//           print(index)
+//
+//        }
+        
+        
+
+        
         return view!
     }()
     
@@ -211,6 +215,8 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
            return view
     }()
     
+    var dataModels :[TrendReposity] = [TrendReposity]()
+    
 
 
     override func viewDidLoad() {
@@ -244,14 +250,15 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
         labelsStackView.snp.makeConstraints { (make) in
             make.height.equalTo(50)
         }
-        
+
         let provider = MoyaProvider<TrendingGithubAPI>()
-        provider.request(.trendingRepositories(language: "java", since: "")) { result in
+        provider.request(.trendingRepositories(language: "", since: "")) { result in
             switch result {
             case .success(let response):
                 if response.statusCode == 200 {
-                   let json = try? response.mapJSON()
-                    print(json ?? "")
+                    guard let josnArray = try? response.mapJSON() as? [[String: Any]] else {return}
+                    self.dataModels = modelArray(from: josnArray, TrendReposity.self)
+                    self.tableView.reloadData()
                 }
             case .failure(let anError):
                 print("error:\(anError.errorDescription!)")
@@ -260,6 +267,11 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
             }
         }
         
+    }
+    
+    // MARK: SegmentedControlDidselectDelegate
+    func segmentedDidSelect(_ didSelect: Int) {
+        print("Select:\(didSelect)")
     }
     
     @objc func goLanuage(){
@@ -275,16 +287,18 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
 
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return dataModels.count
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        cell.textLabel?.text = "111"
-        // Configure the cell...
-
-        return cell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") as? TrendingRepositoryCell
+        if cell == nil  {
+            cell = TrendingRepositoryCell(style: .default, reuseIdentifier: "reuseIdentifier")
+        }
+        let model = dataModels[indexPath.row]
+        cell?.bindData(model)
+        return cell!
     }
     
 

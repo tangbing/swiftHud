@@ -10,9 +10,19 @@ import UIKit
 import HMSegmentedControl
 import SwifterSwift
 
+
+protocol SegmentedControlDidselectDelegate {
+    func segmentedDidSelect(_ didSelect: Int)
+}
+
+
+
 class SegmentedControl: HMSegmentedControl {
 
-    var didSelectItem: ((_ idx: Int) ->())?
+   var didSelectItem: SegmentedControlDidselectDelegate?
+    //var didSelectItem: Int
+    
+    var selectItemBlock: ((_ idx: Int) ->())?
     
     init() {
         super.init(sectionTitles: [])
@@ -26,6 +36,7 @@ class SegmentedControl: HMSegmentedControl {
     
     override init(sectionTitles sectiontitles: [String]) {
         super.init(sectionTitles: sectiontitles)
+
         makeUI()
     }
     
@@ -54,18 +65,23 @@ class SegmentedControl: HMSegmentedControl {
         selectionIndicatorBoxOpacity = 0
         selectionIndicatorHeight = 2.0
         segmentEdgeInset = UIEdgeInsets(inset: self.inset)
-        indexChangeBlock = { [weak self] index in
-            self?.didSelectItem?(index)
-            
-            
-        }
+        
         snp.makeConstraints { (make) in
             make.height.equalTo(Configs.BaseDimensions.segmentedControlHeight)
+        }
+        indexChangeBlock = { [weak self] index in
+           print(index)
+           //self?.didSelectItem?.segmentedDidSelect(index)
+            self?.selectItemBlock?(index)
         }
         updateUI()
     }
     func updateUI() {
         setNeedsDisplay()
     }
+    
+}
 
+extension SegmentedControl {
+    
 }

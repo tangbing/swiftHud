@@ -105,14 +105,342 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 42 files.
   struct file {
+    /// Resource file `EmptyArray.json`.
+    static let emptyArrayJson = Rswift.FileResource(bundle: R.hostingBundle, name: "EmptyArray", pathExtension: "json")
+    /// Resource file `EmptyObject.json`.
+    static let emptyObjectJson = Rswift.FileResource(bundle: R.hostingBundle, name: "EmptyObject", pathExtension: "json")
+    /// Resource file `Events.json`.
+    static let eventsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Events", pathExtension: "json")
+    /// Resource file `EventsOrganization.json`.
+    static let eventsOrganizationJson = Rswift.FileResource(bundle: R.hostingBundle, name: "EventsOrganization", pathExtension: "json")
+    /// Resource file `EventsRepository.json`.
+    static let eventsRepositoryJson = Rswift.FileResource(bundle: R.hostingBundle, name: "EventsRepository", pathExtension: "json")
+    /// Resource file `EventsUserPerformed.json`.
+    static let eventsUserPerformedJson = Rswift.FileResource(bundle: R.hostingBundle, name: "EventsUserPerformed", pathExtension: "json")
+    /// Resource file `EventsUserReceived.json`.
+    static let eventsUserReceivedJson = Rswift.FileResource(bundle: R.hostingBundle, name: "EventsUserReceived", pathExtension: "json")
     /// Resource file `Info.plist`.
     static let infoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "Info", pathExtension: "plist")
+    /// Resource file `Languages.json`.
+    static let languagesJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Languages", pathExtension: "json")
+    /// Resource file `Notifications.json`.
+    static let notificationsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Notifications", pathExtension: "json")
+    /// Resource file `NotificationsRepository.json`.
+    static let notificationsRepositoryJson = Rswift.FileResource(bundle: R.hostingBundle, name: "NotificationsRepository", pathExtension: "json")
+    /// Resource file `Organization.json`.
+    static let organizationJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Organization", pathExtension: "json")
+    /// Resource file `Profile.json`.
+    static let profileJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Profile", pathExtension: "json")
+    /// Resource file `Repository.json`.
+    static let repositoryJson = Rswift.FileResource(bundle: R.hostingBundle, name: "Repository", pathExtension: "json")
+    /// Resource file `RepositoryBranch.json`.
+    static let repositoryBranchJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryBranch", pathExtension: "json")
+    /// Resource file `RepositoryBranches.json`.
+    static let repositoryBranchesJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryBranches", pathExtension: "json")
+    /// Resource file `RepositoryCommit.json`.
+    static let repositoryCommitJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryCommit", pathExtension: "json")
+    /// Resource file `RepositoryCommits.json`.
+    static let repositoryCommitsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryCommits", pathExtension: "json")
+    /// Resource file `RepositoryContents.json`.
+    static let repositoryContentsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryContents", pathExtension: "json")
+    /// Resource file `RepositoryContributors.json`.
+    static let repositoryContributorsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryContributors", pathExtension: "json")
+    /// Resource file `RepositoryForks.json`.
+    static let repositoryForksJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryForks", pathExtension: "json")
+    /// Resource file `RepositoryIssue.json`.
+    static let repositoryIssueJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryIssue", pathExtension: "json")
+    /// Resource file `RepositoryIssueComments.json`.
+    static let repositoryIssueCommentsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryIssueComments", pathExtension: "json")
+    /// Resource file `RepositoryIssues.json`.
+    static let repositoryIssuesJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryIssues", pathExtension: "json")
+    /// Resource file `RepositoryPullRequest.json`.
+    static let repositoryPullRequestJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryPullRequest", pathExtension: "json")
+    /// Resource file `RepositoryPullRequestComments.json`.
+    static let repositoryPullRequestCommentsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryPullRequestComments", pathExtension: "json")
+    /// Resource file `RepositoryPullRequests.json`.
+    static let repositoryPullRequestsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryPullRequests", pathExtension: "json")
+    /// Resource file `RepositoryReadme.json`.
+    static let repositoryReadmeJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryReadme", pathExtension: "json")
+    /// Resource file `RepositoryRelease.json`.
+    static let repositoryReleaseJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryRelease", pathExtension: "json")
+    /// Resource file `RepositoryReleases.json`.
+    static let repositoryReleasesJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryReleases", pathExtension: "json")
+    /// Resource file `RepositorySearch.json`.
+    static let repositorySearchJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositorySearch", pathExtension: "json")
+    /// Resource file `RepositoryStargazers.json`.
+    static let repositoryStargazersJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryStargazers", pathExtension: "json")
+    /// Resource file `RepositoryTrendings.json`.
+    static let repositoryTrendingsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryTrendings", pathExtension: "json")
+    /// Resource file `RepositoryWatchers.json`.
+    static let repositoryWatchersJson = Rswift.FileResource(bundle: R.hostingBundle, name: "RepositoryWatchers", pathExtension: "json")
+    /// Resource file `User.json`.
+    static let userJson = Rswift.FileResource(bundle: R.hostingBundle, name: "User", pathExtension: "json")
+    /// Resource file `UserFollowers.json`.
+    static let userFollowersJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserFollowers", pathExtension: "json")
+    /// Resource file `UserFollowing.json`.
+    static let userFollowingJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserFollowing", pathExtension: "json")
+    /// Resource file `UserRepositories.json`.
+    static let userRepositoriesJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserRepositories", pathExtension: "json")
+    /// Resource file `UserRepositoriesStarred.json`.
+    static let userRepositoriesStarredJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserRepositoriesStarred", pathExtension: "json")
+    /// Resource file `UserRepositoriesWatching.json`.
+    static let userRepositoriesWatchingJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserRepositoriesWatching", pathExtension: "json")
+    /// Resource file `UserSearch.json`.
+    static let userSearchJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserSearch", pathExtension: "json")
+    /// Resource file `UserTrendings.json`.
+    static let userTrendingsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "UserTrendings", pathExtension: "json")
+
+    /// `bundle.url(forResource: "EmptyArray", withExtension: "json")`
+    static func emptyArrayJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.emptyArrayJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "EmptyObject", withExtension: "json")`
+    static func emptyObjectJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.emptyObjectJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Events", withExtension: "json")`
+    static func eventsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.eventsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "EventsOrganization", withExtension: "json")`
+    static func eventsOrganizationJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.eventsOrganizationJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "EventsRepository", withExtension: "json")`
+    static func eventsRepositoryJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.eventsRepositoryJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "EventsUserPerformed", withExtension: "json")`
+    static func eventsUserPerformedJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.eventsUserPerformedJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "EventsUserReceived", withExtension: "json")`
+    static func eventsUserReceivedJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.eventsUserReceivedJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
 
     /// `bundle.url(forResource: "Info", withExtension: "plist")`
     static func infoPlist(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.infoPlist
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Languages", withExtension: "json")`
+    static func languagesJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.languagesJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Notifications", withExtension: "json")`
+    static func notificationsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.notificationsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "NotificationsRepository", withExtension: "json")`
+    static func notificationsRepositoryJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.notificationsRepositoryJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Organization", withExtension: "json")`
+    static func organizationJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.organizationJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Profile", withExtension: "json")`
+    static func profileJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.profileJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Repository", withExtension: "json")`
+    static func repositoryJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryBranch", withExtension: "json")`
+    static func repositoryBranchJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryBranchJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryBranches", withExtension: "json")`
+    static func repositoryBranchesJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryBranchesJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryCommit", withExtension: "json")`
+    static func repositoryCommitJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryCommitJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryCommits", withExtension: "json")`
+    static func repositoryCommitsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryCommitsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryContents", withExtension: "json")`
+    static func repositoryContentsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryContentsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryContributors", withExtension: "json")`
+    static func repositoryContributorsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryContributorsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryForks", withExtension: "json")`
+    static func repositoryForksJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryForksJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryIssue", withExtension: "json")`
+    static func repositoryIssueJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryIssueJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryIssueComments", withExtension: "json")`
+    static func repositoryIssueCommentsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryIssueCommentsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryIssues", withExtension: "json")`
+    static func repositoryIssuesJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryIssuesJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryPullRequest", withExtension: "json")`
+    static func repositoryPullRequestJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryPullRequestJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryPullRequestComments", withExtension: "json")`
+    static func repositoryPullRequestCommentsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryPullRequestCommentsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryPullRequests", withExtension: "json")`
+    static func repositoryPullRequestsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryPullRequestsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryReadme", withExtension: "json")`
+    static func repositoryReadmeJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryReadmeJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryRelease", withExtension: "json")`
+    static func repositoryReleaseJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryReleaseJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryReleases", withExtension: "json")`
+    static func repositoryReleasesJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryReleasesJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositorySearch", withExtension: "json")`
+    static func repositorySearchJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositorySearchJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryStargazers", withExtension: "json")`
+    static func repositoryStargazersJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryStargazersJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryTrendings", withExtension: "json")`
+    static func repositoryTrendingsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryTrendingsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "RepositoryWatchers", withExtension: "json")`
+    static func repositoryWatchersJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.repositoryWatchersJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "User", withExtension: "json")`
+    static func userJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserFollowers", withExtension: "json")`
+    static func userFollowersJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userFollowersJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserFollowing", withExtension: "json")`
+    static func userFollowingJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userFollowingJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserRepositories", withExtension: "json")`
+    static func userRepositoriesJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userRepositoriesJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserRepositoriesStarred", withExtension: "json")`
+    static func userRepositoriesStarredJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userRepositoriesStarredJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserRepositoriesWatching", withExtension: "json")`
+    static func userRepositoriesWatchingJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userRepositoriesWatchingJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserSearch", withExtension: "json")`
+    static func userSearchJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userSearchJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "UserTrendings", withExtension: "json")`
+    static func userTrendingsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.userTrendingsJson
       return fileResource.bundle.url(forResource: fileResource)
     }
 

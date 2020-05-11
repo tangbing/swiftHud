@@ -4,6 +4,7 @@ PODS:
   - Apollo (0.19.0):
     - Apollo/Core (= 0.19.0)
   - Apollo/Core (0.19.0)
+  - BonMot (5.5.1)
   - CocoaLumberjack/Core (3.6.1)
   - CocoaLumberjack/Swift (3.6.1):
     - CocoaLumberjack/Core
@@ -153,6 +154,7 @@ PODS:
 DEPENDENCIES:
   - AcknowList (~> 1.8)
   - Apollo (= 0.19.0)
+  - BonMot (~> 5.0)
   - CocoaLumberjack/Swift (~> 3.0)
   - DateToolsSwift (~> 4.0)
   - DropDown (~> 2.0)
@@ -166,7 +168,6 @@ DEPENDENCIES:
   - KafkaRefresh (~> 1.0)
   - KakaJSON
   - KeychainAccess (~> 4.0)
-  - Kingfisher
   - Kingfisher (~> 5.0)
   - Localize-Swift (~> 3.0)
   - MessageKit (~> 3.0)
@@ -197,6 +198,7 @@ SPEC REPOS:
     - AcknowList
     - Alamofire
     - Apollo
+    - BonMot
     - CocoaLumberjack
     - DateToolsSwift
     - Differentiator
@@ -255,6 +257,7 @@ SPEC CHECKSUMS:
   AcknowList: a236060b8c33141d7756814fd21d5dab477fc193
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
   Apollo: 4f0fea775a98bba34935764e49d27f2d3b1a5f21
+  BonMot: 0d179476725af81f622a6d9f660f43048070016a
   CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
   DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
@@ -300,6 +303,6 @@ SPEC CHECKSUMS:
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   WhatsNewKit: 3cbe30a202cc387086a977deba52af50f61c656f
 
-PODFILE CHECKSUM: 4b4a7f020bc318afb556b07ea6e12ea0f3dcf7d0
+PODFILE CHECKSUM: 2887b165b04341555f952a6ba7259bb7a3dd6948
 
 COCOAPODS: 1.9.1

@@ -5,12 +5,12 @@ target 'Swift-douban' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod "Kingfisher"
+ 
   pod "KakaJSON"
   pod "MJRefresh"
 #  pod "Alamofire" , '~> 4.9.1'
   pod 'SwiftyJSON' , '~> 5.0.0'
-  
+ 
      # Networking
   pod 'Moya/RxSwift', '14.0.0-beta.2'  # https://github.com/Moya/Moya
   pod 'Apollo', '0.19.0'  # https://github.com/apollographql/apollo-ios
@@ -74,7 +74,7 @@ target 'Swift-douban' do
   # Code Quality
   #pod 'FLEX', :git => 'https://github.com/khoren93/FLEX.git', :branch => 'remove_private_api'  # https://github.com/Flipboard/FLEX
   pod 'SwifterSwift', '~> 5.0'  # https://github.com/SwifterSwift/SwifterSwift
-  #pod 'BonMot', '~> 5.0'  # https://github.com/Rightpoint/BonMot
+  pod 'BonMot', '~> 5.0'  # https://github.com/Rightpoint/BonMot
 
   # Logging
   pod 'CocoaLumberjack/Swift', '~> 3.0'  # https://github.com/CocoaLumberjack/CocoaLumberjack
