@@ -22,12 +22,30 @@ import BonMot
         "currentPeriodStars"
  */
 
-struct TrendReposity: Convertible {
+
+class BaseReposity: Convertible {
+      var avatar: String?
+      var name: String?
+      var url: String?
+      required init() {}
+}
+
+class TrendUser: BaseReposity {
+    var sponsorUrl: String?
+    var username: String?
+    var repo : TrendUserRepo?
+}
+
+struct TrendUserRepo: Convertible {
+    var description: String = ""
+    var name: String = ""
+    var url: String = ""
+}
+
+
+class TrendReposity: BaseReposity {
 
     var author: String?
-    var avatar: String?
-    var name: String?
-    var url: String?
     var description: String?
     var language: String?
     var languageColor: String?
@@ -35,7 +53,8 @@ struct TrendReposity: Convertible {
     var forks: Int?
     var currentPeriodStars: Int?
     var builtBy: [buildBy]?
-    
+    var trendingPeriod: String?
+
 }
 
 struct buildBy: Convertible {
@@ -57,6 +76,7 @@ extension TrendReposity {
             languageColorShape, Special.space, languageString
         ])
     }
+
 }
 
 

@@ -33,7 +33,7 @@ enum SearchTypeSegments: Int {
 enum TrendingPeriodSegments: Int {
     case daily, weekly, montly
 
-    var title: String {
+    var titleValue: String {
         switch self {
         case .daily: return "每日"
         case .weekly: return "每周"
@@ -99,13 +99,24 @@ enum SortRepositoryItems: Int {
     }
 }
 
-class SearchTableViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,SegmentedControlDidselectDelegate {
+class SearchTableViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    var dataModels :[Any] = [Any]()
+    var searchModel: SearchModeSegments = .trending
+    var trendingPeriod: TrendingPeriodSegments = .daily
+    var searchType: SearchTypeSegments = .repositories
 
+    
+    let trendingRepositoryCellId = "trendingRepositoryCellId"
+    let TrendingUserCellId = "TrendingUserCellId"
+
+
+    
     lazy var tableView: TableView = {
            let view = TableView(frame: CGRect(), style: .plain)
            view.dataSource = self
            view.delegate = self
-           //view.register(type(of: TrendingRepositoryCell()), forCellReuseIdentifier: "reuseIdentifier")
+           view.register(type(of: TrendingRepositoryCell()), forCellReuseIdentifier: trendingRepositoryCellId)
+           view.register(type(of: TrendingUserCell()), forCellReuseIdentifier: TrendingUserCellId)
         return view
        }()
     
@@ -125,30 +136,28 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
         ]
         let view = SegmentedControl(sectionImages: images, sectionSelectedImages: selectedImages)
         view?.selectedSegmentIndex = 0
-        view?.didSelectItem = self
         view?.snp.makeConstraints({ (make) in
             make.width.equalTo(200)
         })
         
-        view?.selectItemBlock = {index in
+        view?.selectItemBlock = { index in
             print("selectaaaaa\(index):")
+            self.searchType = (SearchTypeSegments(rawValue: index))!
+            self.requestData(self.searchType)
         }
-//        view?.indexChangeBlock = { [weak self] index in
-//           print(index)
-//
-//        }
-        
-        
-
-        
         return view!
     }()
     
     let trendingPeriodView = View()
        lazy var trendingPeriodSegmentedControl: SegmentedControl = {
-           let items = [TrendingPeriodSegments.daily.title, TrendingPeriodSegments.weekly.title, TrendingPeriodSegments.montly.title]
+           let items = [TrendingPeriodSegments.daily.titleValue, TrendingPeriodSegments.weekly.titleValue, TrendingPeriodSegments.montly.titleValue]
            let view = SegmentedControl(sectionTitles: items)
            view.selectedSegmentIndex = 0
+            view.selectItemBlock = { index in
+                print("selectaaaaa\(index):")
+                self.trendingPeriod = TrendingPeriodSegments(rawValue: index)!
+                self.requestData(self.searchType)
+            }
            return view
        }()
     
@@ -157,6 +166,11 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
            let items = [SearchModeSegments.trending.title, SearchModeSegments.search.title]
            let view = SegmentedControl(sectionTitles: items)
            view.selectedSegmentIndex = 0
+           view.selectItemBlock = {index in
+               print("selectaaaaa\(index):")
+               self.trendingPeriod = TrendingPeriodSegments(rawValue: index)!
+               self.requestData(self.searchType)
+           }
            return view
        }()
     
@@ -215,10 +229,7 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
            return view
     }()
     
-    var dataModels :[TrendReposity] = [TrendReposity]()
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.Material.grey200
@@ -251,28 +262,27 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
             make.height.equalTo(50)
         }
 
-        let provider = MoyaProvider<TrendingGithubAPI>()
-        provider.request(.trendingRepositories(language: "", since: "")) { result in
-            switch result {
-            case .success(let response):
-                if response.statusCode == 200 {
-                    guard let josnArray = try? response.mapJSON() as? [[String: Any]] else {return}
-                    self.dataModels = modelArray(from: josnArray, TrendReposity.self)
-                    self.tableView.reloadData()
-                }
-            case .failure(let anError):
-                print("error:\(anError.errorDescription!)")
-                break
-                
-            }
-        }
+        requestData(.repositories)
+    
         
     }
     
-    // MARK: SegmentedControlDidselectDelegate
-    func segmentedDidSelect(_ didSelect: Int) {
-        print("Select:\(didSelect)")
+    func requestData(_ searchType : SearchTypeSegments) {
+        switch searchType {
+        case .repositories:
+            SerarchNetworkTool.shared.requestTrendRepositoryData(language: "", since: self.trendingPeriod.paramValue, periodValue: self.trendingPeriod.titleValue) {[weak self] trendRepositys in
+                        self?.dataModels = trendRepositys
+                        self?.tableView.reloadData()
+            }
+        case .users:
+            SerarchNetworkTool.shared.requestTrendUserRepoData(language: "", since: self.trendingPeriod.paramValue) {[weak self] trendRepositys in
+                self?.dataModels = trendRepositys
+                self?.tableView.reloadData()
+            }
+      
+        }
     }
+    
     
     @objc func goLanuage(){
         print("goLanuage")
@@ -292,13 +302,18 @@ class SearchTableViewController: UIViewController,UITableViewDataSource, UITable
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier") as? TrendingRepositoryCell
-        if cell == nil  {
-            cell = TrendingRepositoryCell(style: .default, reuseIdentifier: "reuseIdentifier")
-        }
+        let any: UITableViewCell
         let model = dataModels[indexPath.row]
-        cell?.bindData(model)
-        return cell!
+        if searchType == .repositories {
+           let cell = tableView.dequeueReusableCell(withIdentifier: trendingRepositoryCellId) as? TrendingRepositoryCell
+            cell?.bindRepositoriesData(model as! TrendReposity)
+            return cell!
+        } else {
+           let cell = tableView.dequeueReusableCell(withIdentifier: TrendingUserCellId) as? TrendingUserCell
+            cell?.bindRepositoryUserData(model as! TrendUser)
+            return cell!
+        }
+        return any
     }
     
 

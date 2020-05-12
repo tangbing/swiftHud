@@ -19,7 +19,7 @@ class BaseTableViewCell: UITableViewCell {
 
     lazy var containerView: View = {
         let view = View()
-        view.backgroundColor = .clear
+        view.backgroundColor = .white
         view.cornerRadius = Configs.BaseDimensions.cornerRadius
         self.addSubview(view)
         view.snp.makeConstraints({ (make) in

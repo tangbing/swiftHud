@@ -11,16 +11,15 @@ import HMSegmentedControl
 import SwifterSwift
 
 
-protocol SegmentedControlDidselectDelegate {
-    func segmentedDidSelect(_ didSelect: Int)
-}
+//protocol SegmentedControlDidselectDelegate {
+//    func segmentedDidSelect(_ didSelect: Int)
+//}
 
 
 
 class SegmentedControl: HMSegmentedControl {
 
-   var didSelectItem: SegmentedControlDidselectDelegate?
-    //var didSelectItem: Int
+   //var didSelectItem: SegmentedControlDidselectDelegate?
     
     var selectItemBlock: ((_ idx: Int) ->())?
     

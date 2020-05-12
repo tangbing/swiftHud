@@ -15,6 +15,9 @@
 		330CC297245FFAB600E44C5A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 330CC295245FFAB600E44C5A /* TableViewCell.xib */; };
 		3349D20224655916000B6EA3 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349D20124655916000B6EA3 /* Label.swift */; };
 		3349D20424655DA8000B6EA3 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349D20324655DA8000B6EA3 /* TableView.swift */; };
+		334AE9FD246AAC0D0094C88F /* SerarchNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334AE9FC246AAC0D0094C88F /* SerarchNetworkTool.swift */; };
+		3373131E246B0526001198A3 /* TrendingRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373131D246B0526001198A3 /* TrendingRepositoryCell.swift */; };
+		33731320246B0551001198A3 /* TrendingUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3373131F246B0551001198A3 /* TrendingUserCell.swift */; };
 		337ABD3B24695CA200289430 /* Foundation+SwiftHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337ABD3A24695CA200289430 /* Foundation+SwiftHub.swift */; };
 		337BB087245AC427001F4EFF /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337BB086245AC426001F4EFF /* Icons.xcassets */; };
 		337BB08D245AD083001F4EFF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337BB08C245AD083001F4EFF /* Info.plist */; };
@@ -63,7 +66,7 @@
 		337E0E8B246697BF00A4ABDF /* EventsOrganization.json in Resources */ = {isa = PBXBuildFile; fileRef = 337E0E62246697BF00A4ABDF /* EventsOrganization.json */; };
 		337E0E8D246698A600A4ABDF /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E8C246698A600A4ABDF /* GitHubAPI.swift */; };
 		337E0E92246933E300A4ABDF /* TrendReposity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E91246933E300A4ABDF /* TrendReposity.swift */; };
-		337E0E952469467000A4ABDF /* TrendingRepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E942469467000A4ABDF /* TrendingRepositoryCell.swift */; };
+		337E0E952469467000A4ABDF /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E942469467000A4ABDF /* DefaultTableViewCell.swift */; };
 		337E0E972469479300A4ABDF /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E962469479300A4ABDF /* ImageView.swift */; };
 		337E0E992469481F00A4ABDF /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337E0E982469481F00A4ABDF /* BaseTableViewCell.swift */; };
 		3383B65223850A51001ED2A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383B65123850A51001ED2A9 /* AppDelegate.swift */; };
@@ -113,6 +116,9 @@
 		330CC295245FFAB600E44C5A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3349D20124655916000B6EA3 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3349D20324655DA8000B6EA3 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		334AE9FC246AAC0D0094C88F /* SerarchNetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerarchNetworkTool.swift; sourceTree = "<group>"; };
+		3373131D246B0526001198A3 /* TrendingRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryCell.swift; sourceTree = "<group>"; };
+		3373131F246B0551001198A3 /* TrendingUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingUserCell.swift; sourceTree = "<group>"; };
 		337ABD3A24695CA200289430 /* Foundation+SwiftHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+SwiftHub.swift"; sourceTree = "<group>"; };
 		337BB086245AC426001F4EFF /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		337BB08C245AD083001F4EFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +167,7 @@
 		337E0E62246697BF00A4ABDF /* EventsOrganization.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventsOrganization.json; sourceTree = "<group>"; };
 		337E0E8C246698A600A4ABDF /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 		337E0E91246933E300A4ABDF /* TrendReposity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendReposity.swift; sourceTree = "<group>"; };
-		337E0E942469467000A4ABDF /* TrendingRepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryCell.swift; sourceTree = "<group>"; };
+		337E0E942469467000A4ABDF /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		337E0E962469479300A4ABDF /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		337E0E982469481F00A4ABDF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		3383B64E23850A51001ED2A9 /* Swift-douban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-douban.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +241,7 @@
 		33028D362461B69A0005061B /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				334AE9FB246AABF20094C88F /* SearchNetwork */,
 				337E0E932469465400A4ABDF /* cell */,
 				337E0E90246933BB00A4ABDF /* Model */,
 				33028D372461B6ED0005061B /* SearchTableViewController.swift */,
@@ -264,6 +271,14 @@
 				330CC290245FD64400E44C5A /* Movie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		334AE9FB246AABF20094C88F /* SearchNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				334AE9FC246AAC0D0094C88F /* SerarchNetworkTool.swift */,
+			);
+			path = SearchNetwork;
 			sourceTree = "<group>";
 		};
 		337ABD3824695C8500289430 /* Extension */ = {
@@ -369,8 +384,9 @@
 		337E0E932469465400A4ABDF /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				337E0E942469467000A4ABDF /* TrendingRepositoryCell.swift */,
-				337E0E982469481F00A4ABDF /* BaseTableViewCell.swift */,
+				337E0E942469467000A4ABDF /* DefaultTableViewCell.swift */,
+				3373131D246B0526001198A3 /* TrendingRepositoryCell.swift */,
+				3373131F246B0551001198A3 /* TrendingUserCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -453,6 +469,7 @@
 		33B6C98D24625A160010363D /* common */ = {
 			isa = PBXGroup;
 			children = (
+				337E0E982469481F00A4ABDF /* BaseTableViewCell.swift */,
 				33B6C99B2462D8190010363D /* BarButtonItem.swift */,
 				33B6C98E24625A390010363D /* SegmentedControl.swift */,
 				33B6C9952462B4310010363D /* ViewController.swift */,
@@ -772,20 +789,23 @@
 				33028D3B2461B7220005061B /* LoginViewController.swift in Sources */,
 				330CC291245FD64500E44C5A /* Movie.swift in Sources */,
 				33B6C98C24624FF40010363D /* NotificationsViewController.swift in Sources */,
+				3373131E246B0526001198A3 /* TrendingRepositoryCell.swift in Sources */,
 				3383B65623850A51001ED2A9 /* DbViewController.swift in Sources */,
 				337E0E992469481F00A4ABDF /* BaseTableViewCell.swift in Sources */,
 				337E0E92246933E300A4ABDF /* TrendReposity.swift in Sources */,
 				3349D20224655916000B6EA3 /* Label.swift in Sources */,
 				33B6C99F2462DCDD0010363D /* LibsManager.swift in Sources */,
 				337E0E8D246698A600A4ABDF /* GitHubAPI.swift in Sources */,
+				33731320246B0551001198A3 /* TrendingUserCell.swift in Sources */,
 				33B6C99A2462B7D50010363D /* SearchBar.swift in Sources */,
 				33028D3E2461B7770005061B /* SettingsViewController.swift in Sources */,
 				3349D20424655DA8000B6EA3 /* TableView.swift in Sources */,
 				3383B684238515EC001ED2A9 /* MovieCollectionViewCell.swift in Sources */,
 				33B6C99424625E3B0010363D /* View.swift in Sources */,
+				334AE9FD246AAC0D0094C88F /* SerarchNetworkTool.swift in Sources */,
 				33B6C99C2462D8190010363D /* BarButtonItem.swift in Sources */,
 				3383B65223850A51001ED2A9 /* AppDelegate.swift in Sources */,
-				337E0E952469467000A4ABDF /* TrendingRepositoryCell.swift in Sources */,
+				337E0E952469467000A4ABDF /* DefaultTableViewCell.swift in Sources */,
 				33D73C2C2461B0FC00FF607C /* HomeTabBarViewController.swift in Sources */,
 				33B6C98F24625A390010363D /* SegmentedControl.swift in Sources */,
 				330CC296245FFAB600E44C5A /* TableViewCell.swift in Sources */,
